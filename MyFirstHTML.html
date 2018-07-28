@@ -4,19 +4,90 @@
     <head>
         <meta charset="UTF-8">
         <title>My First Page</title>
+    <style>
+
+        header {
+            background-color: #333333;
+        }
+        
+        h1 {
+            color: #eee;
+            font-size: 28px;
+            text-align: center;
+            padding: 20px 0;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #333333;
+            background-color: #efeee7;
+            margin: 0;
+            padding: 0;
+            line-height: 150%;
+        }
+        
+        .container {
+            width: 1024px;
+            margin: 0 auto;
+        }
+
+        #main-bio {
+            width: 70%;
+        }
+
+        #bio-image {
+            width: 200px;
+            margin-right: 20px;
+        }
+        
+        #contact-info {
+            width: 30%;
+        }
+
+        a {
+            color: #d21034;
+        }
+
+        #main-bio,
+        #contact-info,
+        #bio-image {
+            float: left;
+        }
+
+        p1 {
+            margin: 0;
+        }
+
+
+
+    </style>
     </head>
     <body>
-        <h1>Student Bio</h1>
-        <h2>Tom Stone</h2>
-        <img src="pic1.png" alt="Photo of me">
-        <br>
-        <br>
-        <p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempus, libero ut elementum aliquet, lectus arcu iaculis tortor, sed ultrices purus felis laoreet quam. Ut vulputate nibh ante, at pellentesque tortor fermentum sed. Ut non sem luctus, imperdiet tellus sed, facilisis eros. Fusce euismod maximus dapibus. Vivamus lobortis, ligula nec tempor aliquet, libero odio elementum neque, eget ullamcorper nisl tellus dictum massa. Suspendisse id metus sed lectus tincidunt sagittis. Nullam tincidunt odio nec turpis aliquam semper. Mauris id orci ullamcorper, cursus enim mollis, iaculis lectus. Integer interdum turpis a metus hendrerit dictum.</p1>
-        <h3>Contact Info</h3>
-            <ul>
-                <li><strong>Email: </strong> <a href="mailto:stone3@temple.edu">stone3@temple.edu</a></li>
-                <li><strong>Github: </strong> <a href="https://github.com/TomStone76">TomStone76</a></li>
-                <li><strong>Portfolio: </strong> <a href="#">Coming soon!</a></li>
-            </ul>
+        <header>
+            <h1>Student Bio</h1>
+        </header>
+        <div class="container">
+            <section id="main-bio">
+                <h2>Tom Stone</h2>
+                <img id="bio-image" src="pic1.png" alt="Photo of me">
+                <br>
+                <br>
+                <p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempus, libero ut elementum aliquet, lectus arcu iaculis tortor, sed ultrices purus felis laoreet quam. Ut vulputate nibh ante, at pellentesque tortor fermentum sed. Ut non sem luctus, imperdiet tellus sed, facilisis eros. Fusce euismod maximus dapibus.</p1>
+            </section>
+            <section id="contact-info">
+            <h2>Contact Info</h2>
+                <ul>
+                    <li><strong>Email: </strong> <a href="mailto:stone3@temple.edu">stone3@temple.edu</a></li>
+                    <li><strong>Github: </strong> <a href="https://github.com/TomStone76">TomStone76</a></li>
+                    <li><strong>Portfolio: </strong> <a href="#">Coming soon!</a></li>
+                </ul>
+            </section>
+        </div>    
     </body>
 </html>
